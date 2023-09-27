@@ -11,7 +11,54 @@
 		004885F02AC491B2003C0AFE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004885EF2AC491B2003C0AFE /* ContentView.swift */; };
 		004885F22AC491B4003C0AFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 004885F12AC491B4003C0AFE /* Assets.xcassets */; };
 		004885F52AC491B4003C0AFE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 004885F42AC491B4003C0AFE /* Preview Assets.xcassets */; };
+		004886082AC4938D003C0AFE /* Api.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 004886002AC4938C003C0AFE /* Api.framework */; };
+		0048860F2AC4938D003C0AFE /* ApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0048860E2AC4938D003C0AFE /* ApiTests.swift */; };
+		004886102AC4938D003C0AFE /* Api.h in Headers */ = {isa = PBXBuildFile; fileRef = 004886022AC4938C003C0AFE /* Api.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		004886132AC4938D003C0AFE /* Api.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 004886002AC4938C003C0AFE /* Api.framework */; };
+		004886142AC4938D003C0AFE /* Api.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 004886002AC4938C003C0AFE /* Api.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0048861D2AC493A2003C0AFE /* TanukiAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0048861C2AC493A2003C0AFE /* TanukiAPI.swift */; };
+		0048861F2AC49463003C0AFE /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0048861E2AC49463003C0AFE /* Search.swift */; };
+		004886222AC494C3003C0AFE /* Kanna in Frameworks */ = {isa = PBXBuildFile; productRef = 004886212AC494C3003C0AFE /* Kanna */; };
+		004886252AC49B37003C0AFE /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 004886242AC49B37003C0AFE /* Alamofire */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		004886092AC4938D003C0AFE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 004885E22AC491B2003C0AFE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 004885FF2AC4938C003C0AFE;
+			remoteInfo = Api;
+		};
+		0048860B2AC4938D003C0AFE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 004885E22AC491B2003C0AFE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 004885E92AC491B2003C0AFE;
+			remoteInfo = tanuki;
+		};
+		004886112AC4938D003C0AFE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 004885E22AC491B2003C0AFE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 004885FF2AC4938C003C0AFE;
+			remoteInfo = Api;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		004886182AC4938D003C0AFE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				004886142AC4938D003C0AFE /* Api.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		004885EA2AC491B2003C0AFE /* tanuki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tanuki.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,6 +66,12 @@
 		004885EF2AC491B2003C0AFE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		004885F12AC491B4003C0AFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		004885F42AC491B4003C0AFE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		004886002AC4938C003C0AFE /* Api.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Api.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		004886022AC4938C003C0AFE /* Api.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Api.h; sourceTree = "<group>"; };
+		004886072AC4938D003C0AFE /* ApiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0048860E2AC4938D003C0AFE /* ApiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiTests.swift; sourceTree = "<group>"; };
+		0048861C2AC493A2003C0AFE /* TanukiAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TanukiAPI.swift; sourceTree = "<group>"; };
+		0048861E2AC49463003C0AFE /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +79,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				004886132AC4938D003C0AFE /* Api.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		004885FD2AC4938C003C0AFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				004886222AC494C3003C0AFE /* Kanna in Frameworks */,
+				004886252AC49B37003C0AFE /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		004886042AC4938D003C0AFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				004886082AC4938D003C0AFE /* Api.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36,6 +107,8 @@
 			isa = PBXGroup;
 			children = (
 				004885EC2AC491B2003C0AFE /* tanuki */,
+				004886012AC4938C003C0AFE /* Api */,
+				0048860D2AC4938D003C0AFE /* ApiTests */,
 				004885EB2AC491B2003C0AFE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +117,8 @@
 			isa = PBXGroup;
 			children = (
 				004885EA2AC491B2003C0AFE /* tanuki.app */,
+				004886002AC4938C003C0AFE /* Api.framework */,
+				004886072AC4938D003C0AFE /* ApiTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,7 +142,36 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		004886012AC4938C003C0AFE /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				004886022AC4938C003C0AFE /* Api.h */,
+				0048861C2AC493A2003C0AFE /* TanukiAPI.swift */,
+				0048861E2AC49463003C0AFE /* Search.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		0048860D2AC4938D003C0AFE /* ApiTests */ = {
+			isa = PBXGroup;
+			children = (
+				0048860E2AC4938D003C0AFE /* ApiTests.swift */,
+			);
+			path = ApiTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		004885FB2AC4938C003C0AFE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				004886102AC4938D003C0AFE /* Api.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		004885E92AC491B2003C0AFE /* tanuki */ = {
@@ -77,15 +181,58 @@
 				004885E62AC491B2003C0AFE /* Sources */,
 				004885E72AC491B2003C0AFE /* Frameworks */,
 				004885E82AC491B2003C0AFE /* Resources */,
+				004886182AC4938D003C0AFE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				004886122AC4938D003C0AFE /* PBXTargetDependency */,
 			);
 			name = tanuki;
 			productName = tanuki;
 			productReference = 004885EA2AC491B2003C0AFE /* tanuki.app */;
 			productType = "com.apple.product-type.application";
+		};
+		004885FF2AC4938C003C0AFE /* Api */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 004886152AC4938D003C0AFE /* Build configuration list for PBXNativeTarget "Api" */;
+			buildPhases = (
+				004885FB2AC4938C003C0AFE /* Headers */,
+				004885FC2AC4938C003C0AFE /* Sources */,
+				004885FD2AC4938C003C0AFE /* Frameworks */,
+				004885FE2AC4938C003C0AFE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Api;
+			packageProductDependencies = (
+				004886212AC494C3003C0AFE /* Kanna */,
+				004886242AC49B37003C0AFE /* Alamofire */,
+			);
+			productName = Api;
+			productReference = 004886002AC4938C003C0AFE /* Api.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		004886062AC4938D003C0AFE /* ApiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 004886192AC4938D003C0AFE /* Build configuration list for PBXNativeTarget "ApiTests" */;
+			buildPhases = (
+				004886032AC4938D003C0AFE /* Sources */,
+				004886042AC4938D003C0AFE /* Frameworks */,
+				004886052AC4938D003C0AFE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0048860A2AC4938D003C0AFE /* PBXTargetDependency */,
+				0048860C2AC4938D003C0AFE /* PBXTargetDependency */,
+			);
+			name = ApiTests;
+			productName = ApiTests;
+			productReference = 004886072AC4938D003C0AFE /* ApiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -100,6 +247,14 @@
 					004885E92AC491B2003C0AFE = {
 						CreatedOnToolsVersion = 15.0;
 					};
+					004885FF2AC4938C003C0AFE = {
+						CreatedOnToolsVersion = 15.0;
+						LastSwiftMigration = 1500;
+					};
+					004886062AC4938D003C0AFE = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 004885E92AC491B2003C0AFE;
+					};
 				};
 			};
 			buildConfigurationList = 004885E52AC491B2003C0AFE /* Build configuration list for PBXProject "tanuki" */;
@@ -111,11 +266,17 @@
 				Base,
 			);
 			mainGroup = 004885E12AC491B2003C0AFE;
+			packageReferences = (
+				004886202AC494C3003C0AFE /* XCRemoteSwiftPackageReference "Kanna" */,
+				004886232AC49B37003C0AFE /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 004885EB2AC491B2003C0AFE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				004885E92AC491B2003C0AFE /* tanuki */,
+				004885FF2AC4938C003C0AFE /* Api */,
+				004886062AC4938D003C0AFE /* ApiTests */,
 			);
 		};
 /* End PBXProject section */
@@ -127,6 +288,20 @@
 			files = (
 				004885F52AC491B4003C0AFE /* Preview Assets.xcassets in Resources */,
 				004885F22AC491B4003C0AFE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		004885FE2AC4938C003C0AFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		004886052AC4938D003C0AFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,7 +317,42 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		004885FC2AC4938C003C0AFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0048861D2AC493A2003C0AFE /* TanukiAPI.swift in Sources */,
+				0048861F2AC49463003C0AFE /* Search.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		004886032AC4938D003C0AFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0048860F2AC4938D003C0AFE /* ApiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0048860A2AC4938D003C0AFE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 004885FF2AC4938C003C0AFE /* Api */;
+			targetProxy = 004886092AC4938D003C0AFE /* PBXContainerItemProxy */;
+		};
+		0048860C2AC4938D003C0AFE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 004885E92AC491B2003C0AFE /* tanuki */;
+			targetProxy = 0048860B2AC4938D003C0AFE /* PBXContainerItemProxy */;
+		};
+		004886122AC4938D003C0AFE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 004885FF2AC4938C003C0AFE /* Api */;
+			targetProxy = 004886112AC4938D003C0AFE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		004885F62AC491B4003C0AFE /* Debug */ = {
@@ -267,6 +477,7 @@
 		004885F92AC491B4003C0AFE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +507,7 @@
 		004885FA2AC491B4003C0AFE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -322,6 +534,111 @@
 			};
 			name = Release;
 		};
+		004886162AC4938D003C0AFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 726VR75V6L;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.h1rose.Api;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		004886172AC4938D003C0AFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 726VR75V6L;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.h1rose.Api;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0048861A2AC4938D003C0AFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 726VR75V6L;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.h1rose.ApiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tanuki.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/tanuki";
+			};
+			name = Debug;
+		};
+		0048861B2AC4938D003C0AFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 726VR75V6L;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.h1rose.ApiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tanuki.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/tanuki";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -343,7 +660,57 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		004886152AC4938D003C0AFE /* Build configuration list for PBXNativeTarget "Api" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				004886162AC4938D003C0AFE /* Debug */,
+				004886172AC4938D003C0AFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		004886192AC4938D003C0AFE /* Build configuration list for PBXNativeTarget "ApiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0048861A2AC4938D003C0AFE /* Debug */,
+				0048861B2AC4938D003C0AFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		004886202AC494C3003C0AFE /* XCRemoteSwiftPackageReference "Kanna" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tid-kijyun/Kanna.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.7;
+			};
+		};
+		004886232AC49B37003C0AFE /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.8.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		004886212AC494C3003C0AFE /* Kanna */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 004886202AC494C3003C0AFE /* XCRemoteSwiftPackageReference "Kanna" */;
+			productName = Kanna;
+		};
+		004886242AC49B37003C0AFE /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 004886232AC49B37003C0AFE /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 004885E22AC491B2003C0AFE /* Project object */;
 }
