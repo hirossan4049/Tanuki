@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		004885EE2AC491B2003C0AFE /* tanukiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004885ED2AC491B2003C0AFE /* tanukiApp.swift */; };
-		004885F02AC491B2003C0AFE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004885EF2AC491B2003C0AFE /* ContentView.swift */; };
 		004885F22AC491B4003C0AFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 004885F12AC491B4003C0AFE /* Assets.xcassets */; };
 		004885F52AC491B4003C0AFE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 004885F42AC491B4003C0AFE /* Preview Assets.xcassets */; };
 		004886082AC4938D003C0AFE /* Api.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 004886002AC4938C003C0AFE /* Api.framework */; };
@@ -20,6 +19,11 @@
 		0048861F2AC49463003C0AFE /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0048861E2AC49463003C0AFE /* Search.swift */; };
 		004886222AC494C3003C0AFE /* Kanna in Frameworks */ = {isa = PBXBuildFile; productRef = 004886212AC494C3003C0AFE /* Kanna */; };
 		004886252AC49B37003C0AFE /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 004886242AC49B37003C0AFE /* Alamofire */; };
+		004886292AC4CD28003C0AFE /* RootScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004886282AC4CD28003C0AFE /* RootScreen.swift */; };
+		0048862C2AC4CDA1003C0AFE /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0048862B2AC4CDA1003C0AFE /* HomeScreen.swift */; };
+		0048862F2AC4CEF7003C0AFE /* SearchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0048862E2AC4CEF7003C0AFE /* SearchScreen.swift */; };
+		004886322AC4D0C6003C0AFE /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004886312AC4D0C6003C0AFE /* SettingsScreen.swift */; };
+		004886342AC61179003C0AFE /* ScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004886332AC61179003C0AFE /* ScreenViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,7 +67,6 @@
 /* Begin PBXFileReference section */
 		004885EA2AC491B2003C0AFE /* tanuki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tanuki.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		004885ED2AC491B2003C0AFE /* tanukiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tanukiApp.swift; sourceTree = "<group>"; };
-		004885EF2AC491B2003C0AFE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		004885F12AC491B4003C0AFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		004885F42AC491B4003C0AFE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		004886002AC4938C003C0AFE /* Api.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Api.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,6 +75,11 @@
 		0048860E2AC4938D003C0AFE /* ApiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiTests.swift; sourceTree = "<group>"; };
 		0048861C2AC493A2003C0AFE /* TanukiAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TanukiAPI.swift; sourceTree = "<group>"; };
 		0048861E2AC49463003C0AFE /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
+		004886282AC4CD28003C0AFE /* RootScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootScreen.swift; sourceTree = "<group>"; };
+		0048862B2AC4CDA1003C0AFE /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		0048862E2AC4CEF7003C0AFE /* SearchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchScreen.swift; sourceTree = "<group>"; };
+		004886312AC4D0C6003C0AFE /* SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
+		004886332AC61179003C0AFE /* ScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,8 +134,8 @@
 		004885EC2AC491B2003C0AFE /* tanuki */ = {
 			isa = PBXGroup;
 			children = (
-				004885ED2AC491B2003C0AFE /* tanukiApp.swift */,
-				004885EF2AC491B2003C0AFE /* ContentView.swift */,
+				004886272AC4CD1B003C0AFE /* View */,
+				004886262AC4CD15003C0AFE /* Application */,
 				004885F12AC491B4003C0AFE /* Assets.xcassets */,
 				004885F32AC491B4003C0AFE /* Preview Content */,
 			);
@@ -158,6 +166,50 @@
 				0048860E2AC4938D003C0AFE /* ApiTests.swift */,
 			);
 			path = ApiTests;
+			sourceTree = "<group>";
+		};
+		004886262AC4CD15003C0AFE /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				004885ED2AC491B2003C0AFE /* tanukiApp.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		004886272AC4CD1B003C0AFE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				004886302AC4D0BD003C0AFE /* Settings */,
+				0048862D2AC4CEED003C0AFE /* Search */,
+				0048862A2AC4CD99003C0AFE /* Home */,
+				004886282AC4CD28003C0AFE /* RootScreen.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0048862A2AC4CD99003C0AFE /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				0048862B2AC4CDA1003C0AFE /* HomeScreen.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		0048862D2AC4CEED003C0AFE /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				0048862E2AC4CEF7003C0AFE /* SearchScreen.swift */,
+				004886332AC61179003C0AFE /* ScreenViewModel.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		004886302AC4D0BD003C0AFE /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				004886312AC4D0C6003C0AFE /* SettingsScreen.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,8 +364,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				004885F02AC491B2003C0AFE /* ContentView.swift in Sources */,
+				004886342AC61179003C0AFE /* ScreenViewModel.swift in Sources */,
 				004885EE2AC491B2003C0AFE /* tanukiApp.swift in Sources */,
+				004886292AC4CD28003C0AFE /* RootScreen.swift in Sources */,
+				0048862C2AC4CDA1003C0AFE /* HomeScreen.swift in Sources */,
+				004886322AC4D0C6003C0AFE /* SettingsScreen.swift in Sources */,
+				0048862F2AC4CEF7003C0AFE /* SearchScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
