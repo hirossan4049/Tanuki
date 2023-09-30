@@ -9,4 +9,5 @@ import Foundation
 
 public enum TanukiAPI {
     public class Search { public init() {} }
+    public class Thread { public init() {} }
 }

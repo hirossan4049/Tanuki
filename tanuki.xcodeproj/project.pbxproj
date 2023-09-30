@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		001ACD4F2AC6FD5F0024C4AF /* ThreadScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001ACD4E2AC6FD5F0024C4AF /* ThreadScreen.swift */; };
+		001ACD512AC6FE2B0024C4AF /* Thread.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001ACD502AC6FE2B0024C4AF /* Thread.swift */; };
+		001ACD532AC7052E0024C4AF /* ThreadItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001ACD522AC7052E0024C4AF /* ThreadItem.swift */; };
 		004885EE2AC491B2003C0AFE /* tanukiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004885ED2AC491B2003C0AFE /* tanukiApp.swift */; };
 		004885F22AC491B4003C0AFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 004885F12AC491B4003C0AFE /* Assets.xcassets */; };
 		004885F52AC491B4003C0AFE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 004885F42AC491B4003C0AFE /* Preview Assets.xcassets */; };
@@ -65,6 +68,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		001ACD4E2AC6FD5F0024C4AF /* ThreadScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadScreen.swift; sourceTree = "<group>"; };
+		001ACD502AC6FE2B0024C4AF /* Thread.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thread.swift; sourceTree = "<group>"; };
+		001ACD522AC7052E0024C4AF /* ThreadItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadItem.swift; sourceTree = "<group>"; };
 		004885EA2AC491B2003C0AFE /* tanuki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tanuki.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		004885ED2AC491B2003C0AFE /* tanukiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tanukiApp.swift; sourceTree = "<group>"; };
 		004885F12AC491B4003C0AFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -111,6 +117,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		001ACD4D2AC6FD4E0024C4AF /* Thread */ = {
+			isa = PBXGroup;
+			children = (
+				001ACD4E2AC6FD5F0024C4AF /* ThreadScreen.swift */,
+				001ACD522AC7052E0024C4AF /* ThreadItem.swift */,
+			);
+			path = Thread;
+			sourceTree = "<group>";
+		};
 		004885E12AC491B2003C0AFE = {
 			isa = PBXGroup;
 			children = (
@@ -156,6 +171,7 @@
 				004886022AC4938C003C0AFE /* Api.h */,
 				0048861C2AC493A2003C0AFE /* TanukiAPI.swift */,
 				0048861E2AC49463003C0AFE /* Search.swift */,
+				001ACD502AC6FE2B0024C4AF /* Thread.swift */,
 			);
 			path = Api;
 			sourceTree = "<group>";
@@ -179,6 +195,7 @@
 		004886272AC4CD1B003C0AFE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				001ACD4D2AC6FD4E0024C4AF /* Thread */,
 				004886302AC4D0BD003C0AFE /* Settings */,
 				0048862D2AC4CEED003C0AFE /* Search */,
 				0048862A2AC4CD99003C0AFE /* Home */,
@@ -366,10 +383,12 @@
 			files = (
 				004886342AC61179003C0AFE /* ScreenViewModel.swift in Sources */,
 				004885EE2AC491B2003C0AFE /* tanukiApp.swift in Sources */,
+				001ACD532AC7052E0024C4AF /* ThreadItem.swift in Sources */,
 				004886292AC4CD28003C0AFE /* RootScreen.swift in Sources */,
 				0048862C2AC4CDA1003C0AFE /* HomeScreen.swift in Sources */,
 				004886322AC4D0C6003C0AFE /* SettingsScreen.swift in Sources */,
 				0048862F2AC4CEF7003C0AFE /* SearchScreen.swift in Sources */,
+				001ACD4F2AC6FD5F0024C4AF /* ThreadScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,6 +397,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0048861D2AC493A2003C0AFE /* TanukiAPI.swift in Sources */,
+				001ACD512AC6FE2B0024C4AF /* Thread.swift in Sources */,
 				0048861F2AC49463003C0AFE /* Search.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
